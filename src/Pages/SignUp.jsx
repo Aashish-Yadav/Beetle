@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { BackendURL } from '../App';
 import axios from 'axios'
-import ThreeBackground from '../Components/ThreeBackground';
+import { Link } from 'react-router-dom';
 
 function SignUp() {
 
@@ -24,8 +24,6 @@ function SignUp() {
 
 return (
   <div className="relative flex items-center justify-center min-h-screen">
-    <ThreeBackground />
-
     <form
       onSubmit={handleSubmit}
       className="relative z-10 bg-white bg-opacity-90 p-8 rounded-xl shadow-2xl w-full max-w-md flex flex-col space-y-6"
@@ -64,6 +62,11 @@ return (
       >
         Sign Up
       </button>
+      <Link to='/signin'>
+        <div className='text-blue-500'>
+          SignIn?
+        </div>
+      </Link>
     </form>
   </div>
 );

@@ -3,6 +3,7 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
 import SignIn from './Pages/SignIn'
 import Home from './Pages/Home'
 import SignUp from './Pages/SignUp'
+import Navbar from './Components/Navbar'
 
 
 export const BackendURL = 'http://localhost:8080'
@@ -12,6 +13,7 @@ function App() {
   return (
    <div>
       <Router>
+    <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/signin' element={<SignIn/>}/>

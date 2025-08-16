@@ -4,6 +4,7 @@ import SignIn from './Pages/SignIn'
 import Home from './Pages/Home'
 import SignUp from './Pages/SignUp'
 import Navbar from './Components/Navbar'
+import Profile from './Pages/Profile'
 
 
 export const BackendURL = 'http://localhost:8080'
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/signin' element={<SignIn/>}/>
           <Route path='/signup' element={<SignUp/>}/>
+          <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </Router>
    </div>

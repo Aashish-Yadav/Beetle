@@ -41,7 +41,11 @@ function Navbar() {
            ):(
             <>
              <div className='bg-[var(--purple)] rounded-4xl'>
-                <button className='text-white px-3 py-1 font-bold'> <User className="w-4  text-white" /></button>
+                <button className='text-white px-3 py-1 font-bold'> 
+                  <Link to='/profile'>
+                  <User className="w-4  text-white" />
+                  </Link>
+                </button>
              </div>
             <div className='bg-[var(--purple)] rounded-2xl'>
                 <button onClick={handleLogout} className='text-white px-3 py-1 font-semibold'>LogOut</button>
